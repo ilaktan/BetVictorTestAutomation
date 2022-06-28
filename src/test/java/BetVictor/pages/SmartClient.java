@@ -72,7 +72,7 @@ public class SmartClient extends GenericFunctions {
         lifespan=lifespan+1;
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[2]")).getText());
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 10",driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[2]")).getText());
-        //waitFor(1);
+
         isElementClickable("(//*[text()='"+linkText+"10'])[3]");
         lifespan=lifespan+1;
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[3]")).getText());
@@ -81,10 +81,11 @@ public class SmartClient extends GenericFunctions {
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[4]")).getText());
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 10",driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[4]")).getText());
         lifespan=lifespan+1;
+        waitFor(1);
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"12'])")).getText());
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 12",driver.findElement(By.xpath("(//*[text()='"+linkText+"12'])")).getText());
         lifespan=lifespan+1;
-        //waitFor(1);
+        waitFor(1);
         isElementClickable("(//*[text()='"+linkText+"15'])[1]");
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[1]")).getText());
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 15",driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[1]")).getText());
@@ -110,7 +111,7 @@ public class SmartClient extends GenericFunctions {
         lifespan=lifespan+1;
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[1]")).getText());
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 30",driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[1]")).getText());
-        //waitFor(1);
+        waitFor(1);
         isElementClickable("(//*[text()='"+linkText+"30'])[2]");
         lifespan=lifespan+1;
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[2]")).getText());
