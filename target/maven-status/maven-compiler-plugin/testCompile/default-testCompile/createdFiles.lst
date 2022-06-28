@@ -1,0 +1,10 @@
+BetVictor\step_definitions\LoginStepDef.class
+BetVictor\runners\CukesRunner.class
+BetVictor\pages\SmartClient.class
+BetVictor\step_definitions\SmartClientStepDef.class
+BetVictor\pages\CommonMethods.class
+BetVictor\step_definitions\Hooks.class
+BetVictor\utilities\Pages.class
+BetVictor\utilities\ConfigurationReader.class
+BetVictor\pages\Login.class
+BetVictor\utilities\GenericFunctions.class

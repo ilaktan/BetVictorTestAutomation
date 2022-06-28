@@ -1,0 +1,646 @@
+[
+  {
+    "line": 9,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-28T15:43:56.054Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "1-User on the webpage",
+        "description": "",
+        "id": "user-is-testing-fill-fields-functionality.;1-user-on-the-webpage",
+        "after": [
+          {
+            "result": {
+              "duration": 997700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1559447800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User open browser",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4238690900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User on the Exercise website homepage",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userOnTheExerciseWebsiteHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2064232500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click the accept button",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userClickTheAcceptButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-28T15:44:03.983Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "2-User is testing Fill fields functionality.",
+        "description": "",
+        "id": "user-is-testing-fill-fields-functionality.;2-user-is-testing-fill-fields-functionality.",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 111984700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User set animal letter \"a\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 23
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.user_set_animal_letter(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57995700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User open the browser Amount Slider on the \"60\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60\"",
+                  "offset": 43
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userOpenTheBrowserAmountSliderOnThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 518577200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User move max life span slider from between \"0\" to \"-70\" with this value \"60\" to \"40\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"-70\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"60\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"40\"",
+                  "offset": 81
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userMoveMaxLifeSpanSliderFromBetweenToWithThisValueTo(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 90774100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click the sort by",
+            "match": {
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userClickTheSortBy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79998600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User sort order by \"Life Span\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Life Span\"",
+                  "offset": 19
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userSortOrderBy(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54000200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User click the Ascending box",
+            "match": {
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userClickTheAscendingBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63999200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click the \"Filter\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Filter\"",
+                  "offset": 15
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userClickThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6680835700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User calculate the \"Lifespan: \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lifespan: \"",
+                  "offset": 19
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userCalculateThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-28T15:44:11.655Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "3-User is closing browser",
+        "description": "",
+        "id": "user-is-testing-fill-fields-functionality.;3-user-is-closing-browser",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 220059500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User close browser",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userCloseBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "User is testing Fill fields functionality.",
+    "description": "",
+    "id": "user-is-testing-fill-fields-functionality.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SmartClient1.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 6,
+          "column": 1
+        }
+      },
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 7,
+          "column": 1
+        }
+      },
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 9,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-28T15:44:11.885Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "1-User on the webpage",
+        "description": "",
+        "id": "select-from-dropdown-row-which-will-meet-all-criteria;1-user-on-the-webpage",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1005342000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User open browser",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3760733200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User navigate to \"http://www.smartclient.com/smartgwt/showcase/#featured_dropdown_grid_category\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.smartclient.com/smartgwt/showcase/#featured_dropdown_grid_category\"",
+                  "offset": 17
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userNavigateToURL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2058803000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click the accept button",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userClickTheAcceptButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-28T15:44:18.720Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "1-Select from dropdown row which will meet all criteria",
+        "description": "",
+        "id": "select-from-dropdown-row-which-will-meet-all-criteria;1-select-from-dropdown-row-which-will-meet-all-criteria;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 119842600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User click the item",
+            "match": {
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userClickTheItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 685444200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User select item contains \"Exercise\" units contains \"Ea\" unit cost greater then \"1.1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Exercise\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Ea\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"1.1\"",
+                  "offset": 80
+                }
+              ],
+              "location": "BetVictor.step_definitions.SmartClientStepDef.userSelectItemContainsUnitsContainsUnitCostGreaterThen(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-28T15:44:19.532Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "3-User is closing browser",
+        "description": "",
+        "id": "select-from-dropdown-row-which-will-meet-all-criteria;3-user-is-closing-browser",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "BetVictor.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 190014700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User close browser",
+            "match": {
+              "location": "BetVictor.step_definitions.LoginStepDef.userCloseBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Select from dropdown row which will meet all criteria",
+    "description": "",
+    "id": "select-from-dropdown-row-which-will-meet-all-criteria",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SmartClient2.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 6,
+          "column": 1
+        }
+      },
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 7,
+          "column": 1
+        }
+      },
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
