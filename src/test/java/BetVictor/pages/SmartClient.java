@@ -3,6 +3,8 @@ package BetVictor.pages;
 import BetVictor.utilities.GenericFunctions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
@@ -58,63 +60,98 @@ public class SmartClient extends GenericFunctions {
     public void calculateThe (String linkText){
 
         int lifespan=0;
+        Actions moveSlider = new Actions(driver);
+        Action action = moveSlider.dragAndDropBy(driver.findElement(By.xpath("(//img[@class='vScrollThumbGrip'])[2]")), 0, -25).build();
+        action.perform();
 
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"3'])")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 3",driver.findElement(By.xpath("(//*[text()='"+linkText+"3'])")).getText());
-        //waitFor(1);
-        isElementClickable("(//*[text()='"+linkText+"8'])");
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"8'])")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 8",driver.findElement(By.xpath("(//*[text()='"+linkText+"8'])")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"9'])")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 9",driver.findElement(By.xpath("(//*[text()='"+linkText+"9'])")).getText());
         lifespan=lifespan+1;
-        System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[2]")).getText());
-        Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 10",driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[2]")).getText());
 
-        isElementClickable("(//*[text()='"+linkText+"10'])[3]");
+        System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[2]")).getText());
+        waitFor(1);
+        Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 10",driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[2]")).getText());
         lifespan=lifespan+1;
+
+        Actions moveSlider2 = new Actions(driver);
+        Action action2 = moveSlider2.dragAndDropBy(driver.findElement(By.xpath("(//img[@class='vScrollThumbGrip'])[2]")), 0, 25).build();
+        action2.perform();
+        waitFor(1);
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[3]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 10",driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[3]")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[4]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 10",driver.findElement(By.xpath("(//*[text()='"+linkText+"10'])[4]")).getText());
         lifespan=lifespan+1;
-        waitFor(1);
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"12'])")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 12",driver.findElement(By.xpath("(//*[text()='"+linkText+"12'])")).getText());
         lifespan=lifespan+1;
-        waitFor(1);
-        isElementClickable("(//*[text()='"+linkText+"15'])[1]");
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[1]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 15",driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[1]")).getText());
         lifespan=lifespan+1;
-        //waitFor(1);
-        isElementClickable("(//*[text()='"+linkText+"15'])[3]");
+
+        Actions moveSlider3 = new Actions(driver);
+        Action action3 = moveSlider3.dragAndDropBy(driver.findElement(By.xpath("(//img[@class='vScrollThumbGrip'])[2]")), 0, 300).build();
+        action3.perform();
+        waitFor(1);
+
+        WebElement eng=driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[3]"));
+        waitFor(2);
+        JavascriptExecutor jse=(JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);", eng);
+
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[3]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 15",driver.findElement(By.xpath("(//*[text()='"+linkText+"15'])[3]")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='" + linkText + "20'])[1]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 20",driver.findElement(By.xpath("(//*[text()='"+linkText+"20'])[1]")).getText());
         lifespan=lifespan+1;
-        //waitFor(1);
-        isElementClickable("(//*[text()='"+linkText+"20'])[3]");
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"20'])[3]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 20",driver.findElement(By.xpath("(//*[text()='"+linkText+"20'])[3]")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"20'])[5]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 20",driver.findElement(By.xpath("(//*[text()='"+linkText+"20'])[5]")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"25'])[1]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 25",driver.findElement(By.xpath("(//*[text()='"+linkText+"25'])[1]")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[1]")).getText());
-        Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 30",driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[1]")).getText());
         waitFor(1);
-        isElementClickable("(//*[text()='"+linkText+"30'])[2]");
+        Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 30",driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[1]")).getText());
         lifespan=lifespan+1;
+
         System.out.println(driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[2]")).getText());
+        waitFor(1);
         Assert.assertEquals("expectedMaxLifeSpan different","Lifespan: 30",driver.findElement(By.xpath("(//*[text()='"+linkText+"30'])[2]")).getText());
         lifespan=lifespan+1;
 
